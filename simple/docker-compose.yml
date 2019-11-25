@@ -1,0 +1,111 @@
+version: "3"
+services:
+  burrow-node-0:
+    image: hyperledger/burrow:0.23.1
+    container_name: burrow_0
+    network_mode: host
+    volumes:
+    - ./chain:/chain
+    working_dir: /chain
+    environment:
+      NODEID: 0
+    entrypoint: ./startup.sh
+
+  burrow-node-1:
+    image: hyperledger/burrow:0.23.1
+    container_name: burrow_1
+    network_mode: host
+    volumes:
+    - ./chain:/chain
+    working_dir: /chain
+    environment:
+      NODEID: 1
+    entrypoint: ./startup.sh
+
+  burrow-node-2:
+    image: hyperledger/burrow:0.23.1
+    container_name: burrow_2
+    network_mode: host
+    volumes:
+    - ./chain:/chain
+    working_dir: /chain
+    environment:
+      NODEID: 2
+    entrypoint: ./startup.sh
+
+  burrow-node-3:
+    image: hyperledger/burrow:0.23.1
+    container_name: burrow_3
+    network_mode: host
+    volumes:
+    - ./chain:/chain
+    working_dir: /chain
+    environment:
+      NODEID: 3
+    entrypoint: ./startup.sh
+
+  burrow-node-4:
+    image: hyperledger/burrow:0.23.1
+    container_name: burrow_4
+    network_mode: host
+    volumes:
+    - ./chain:/chain
+    working_dir: /chain
+    environment:
+      NODEID: 4
+    entrypoint: ./startup.sh
+
+  burrow-node-5:
+    image: hyperledger/burrow:0.23.1
+    container_name: burrow_5
+    network_mode: host
+    volumes:
+    - ./chain:/chain
+    working_dir: /chain
+    environment:
+      NODEID: 5
+    entrypoint: ./startup.sh
+
+  burrow-node-6:
+    image: hyperledger/burrow:0.23.1
+    container_name: burrow_6
+    network_mode: host
+    volumes:
+    - ./chain:/chain
+    working_dir: /chain
+    environment:
+      NODEID: 6
+    entrypoint: ./startup.sh
+
+  burrow-node-7:
+    image: hyperledger/burrow:0.23.1
+    container_name: burrow_7
+    network_mode: host
+    volumes:
+    - ./chain:/chain
+    working_dir: /chain
+    environment:
+      NODEID: 7
+    entrypoint: ./startup.sh
+
+  burrow-node-8:
+    image: hyperledger/burrow:0.23.1
+    container_name: burrow_8
+    network_mode: host
+    volumes:
+    - ./chain:/chain
+    working_dir: /chain
+    environment:
+      NODEID: 8
+    entrypoint: ./startup.sh
+
+  burrow-node-9:
+    image: hyperledger/burrow:0.23.1
+    container_name: burrow_9
+    network_mode: host
+    volumes:
+    - ./chain:/chain
+    working_dir: /chain
+    environment:
+      NODEID: 9
+    entrypoint: ./startup.sh
